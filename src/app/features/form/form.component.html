@@ -1,0 +1,80 @@
+<div class="grid-form">
+
+  <div class="flex-container left center-container">
+
+    <div>
+      <span class="red-header-m3">Let’s create</span>
+
+      <span class="header-m1">Work</span>
+      <span class="header-m2">Together</span>
+
+
+    </div>
+
+    <div class="text-one">
+      Tell me about your needs and let’s start working together on the best solution for users and business.
+    </div>
+    <div class="text-one">
+      I’m not a freelancer, I will be part of your team.
+    </div>
+
+
+    <div>
+      <span class="red-header-s3">My digital print</span>
+
+      <span class="header-s1">Let’s</span>
+      <span class="header-s2">Connect</span>
+    </div>
+
+    <div class="social-icons-flex social-icons-j2">
+      <img src="assets/Dribbble.svg" alt="dribdble">
+      <img src="assets/GitHub.svg" alt="github">
+      <img src="assets/Instagram.svg" alt="instagram">
+      <img src="assets/LinkedIn.svg" alt="linkedin">
+    </div>
+
+
+  </div>
+
+  <form class="flex-container form-container center-container" [formGroup]="form" (ngSubmit)="save()">
+
+    <div class="text-one">
+      Let’s meet. What’s your name?
+    </div>
+    <input class="input input-m" type="text" placeholder="" formControlName="name">
+
+    <div class="text-one">
+      And your email…
+    </div>
+    <input class="input input-m" type="text" placeholder="" formControlName="email">
+
+    <div class="flex-input">
+      <div>
+        <div class="text-one">
+          How can I help you?
+        </div>
+        <div class="drop-down input">App design</div>
+      </div>
+
+      <div>
+        <div class="text-one">
+          What’s the priority?
+        </div>
+        <div class="drop-down input"> We have time</div>
+      </div>
+
+
+    </div>
+    <div class="text-one">
+      Tell me more about your project
+    </div>
+    <input class="input input-l" type="text" formControlName="project"
+      placeholder="Budget, extra details, deadlines, special requirements…">
+
+    <div class="btn-flex">
+      <button class="red-gradiant-btn" type="submit">Let’s work!</button>
+    </div>
+
+  </form>
+
+</div>
