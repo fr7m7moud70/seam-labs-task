@@ -30,6 +30,7 @@ export class FormComponent implements OnInit {
 
     this.project = (<FormControl>this.form.get("project")).value;
 
-    await axios.post("https://example.com/api/contact", this.form);
+    await axios.post("https://example.com/api/contact", this.form.value);
+    // console.log(this.form.value);
   }
 }
